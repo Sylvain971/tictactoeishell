@@ -1,0 +1,60 @@
+
+Au début on a un tableau de neuf cases libres à remplir.
+
+Il y a deux joueurs :
+	- chaque joueur peut choisir une case
+	- chaque joueur écrit d'une façon précise
+
+Il y a neuf cases :
+	- une case appartient à une ligne (1 à 3) et à une colonne (a à c)
+	- lorsqu'un joueur se l'attribue, la case passe de disponible à propriété d'un joueur
+
+Les joueurs jouent chacun leur tour :
+	- on rappelle les cases libres
+	- on demande au joueur de choisir
+	- on vérifie que son choix correspond bien à une case libre
+	- on attribue au bon joueur la case qu'il a choisi
+	- on rappelle les positions de chaque joueur
+
+Le jeu s'arrête si :
+	- un joueur a aligné ses marques 
+			- horizontalement : répétition de la ligne
+			- verticalement : répétition de la lettre
+			- en diagonal : chiffre + 1, lettre +
+	- aucun joueur n'a gagné et aucune case n'est disponible
+
+On affiche donc un message : 
+	- Le joueur "xx" a gagné
+	- Impossible de vous départager.
+
+==================================================================================
+
+making_your_move (player_1)
+=> permet de choisir la case à jouer
+
+available_case_evaluation
+=> permet de dire les cases disponibles
+
+making_your_move (player_2)
+=> permet de choisir la case à jouer
+
+available_case_evaluation
+=> permet de dire les cases disponibles
+
+making_your_move (player_1)
+=> permet de choisir la case à jouer
+
+available_case_evaluation
+=> permet de dire les cases disponibles
+
+making_your_move (player_2)
+=> permet de choisir la case à jouer
+
+available_case_evaluation
+=> permet de dire les cases disponibles
+
+making_your_move (player_1)
+=> permet de choisir la case à jouer
+
+winning_move?
+= vérifie si le jeu est terminé
